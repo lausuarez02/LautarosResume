@@ -1,0 +1,1013 @@
+Para darle color al borde de un h1 por ej
+se puede usar esto = 
+<h1 style="border:2px solid violet"></h1>
+
+
+
+Tambien se pueden agregar colores con 
+rgb o rgba por ej 
+rgb(255, 0, 0)
+rgba(255, 99, 71, 0.8)
+
+Modificando lo numero, modificamos el color
+
+Tambien se pueden agregar con #ffffff por ej
+
+Tambien se puede agregar asi e ir cambiando
+la saturacion
+hsl(0, 100%, 50%)
+Dependiendo el numero del principio y luego
+modificar la densidad con la que se verá
+
+
+
+
+
+Esto modifica totalmente el color, lo mas importante
+es el primero y el ultimo y luego los del 
+medio modifican densidad etc
+hsla(0, 100%, 59%, 0.3)
+
+
+
+
+
+
+
+
+
+Con esto podemos modificar la opacidad
+del color que elegimos
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+Esto hace que la foto se repita
+horizontalmente, es para una imagen
+tipo fondo, de algun color especifico
+
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+
+
+
+Y con el no-repeat no se repite la foto
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+Con el background position, ubicamos
+la doto del lado que mas nos guste, y 
+tambien agregamos un margen del ldo
+izquierdo de 200px
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-left: 200px;
+  background-color: green;
+}
+
+
+
+Esta propiedad hace que se mueva todo el 
+texto siga bajando pero la foto
+este fija en un lugar
+background-attachment: fixed;
+
+
+
+Y con este que se quede fijo arriba por
+ej
+background-attachment: scroll;
+
+
+Con esta modificamos por ej
+haciendo que se quede abajo a la
+derecha
+background-position: right bottom;
+
+
+
+
+
+
+
+
+
+
+
+Esto es lo mismo que                                                    Esto 
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");                             body {background: #ffffff url("img_tree.png") no-repeat right top;}
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+
+
+
+
+Cuando usamos el modelo corto de arriba
+el orden de las cosas es asi=
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+
+
+
+
+
+Estos son los tipos de bordes disponibles, el que mas
+me gusta a mi para el portafolio es 
+outser border
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+
+
+
+
+
+
+
+El border width se puede definir en
+ciertos valores, por ej
+px, pt, cm, em , etc o sino se pueden usar
+valores pre definidos: thin, medium, or
+thick
+
+
+Se pueden definir hasta 4 valores en border
+widht indicando los 4 lados que posee
+por ej   border-width: 25px 10px 4px 35px;
+o simplemente podemos usar 2
+
+
+
+
+
+
+
+a los bordes se le puede decir el color
+de cada uno de ellos por ej
+border-style: solid; Esto signfica el estado
+del borde, si queremos que tenga puntitos
+o algo distitnto
+border-color: white green blue yellow;
+Esto muestra los cuatro lados del cuadro
+de distintos colores
+
+
+
+
+
+
+Tambien le podemos dara los bordes distintos
+estilos por ej, estos son los estilos
+que le podemos dar
+ border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+Especificando el lado que afectaria
+
+
+
+
+Tambien se puede hacer asi:
+border-style: dotted solid double dashed
+
+
+
+
+Este es un ejemplo de como le estamos 
+dando al borde izquierdo 6px, solid
+y de color rojo
+ border-left: 6px solid red;
+  background-color: lightgrey;
+
+
+
+
+
+para hacer que el borde sea redondeado
+debemos utilizar border-radius por ej
+border-radius: 5px; Esto hace que le
+de un borde redondeado
+
+
+
+Esto le da un borde doble a la parte de arriba
+ border-top: thick double #ff0000;
+
+
+
+
+El margen se usa de esta forma:
+
+margin: 50px;
+
+
+
+Asi se le puede dar margen de los
+distintos bordes
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+
+
+o tambien se puede usar asi
+
+margin: 25px 50px 75px 100px;
+
+
+
+
+
+
+
+padding 
+El padding se genera dentro del elemento o 
+titulo en el que trabajamos, por ej si le agregamos padding a
+un boton este hará mas grande al boton
+
+Se le puede dar padding de esta manera
+
+padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+
+
+
+
+Tambien se puede hacer esto
+div {
+  padding: 25px 50px 75px 100px;
+}
+
+
+
+
+
+
+
+Podemos darle un porcentaje del 100% de la 
+pantalla a nuestro width like this
+
+div {
+width: 55%;
+border: 5px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+Tambien poseemos el outline que es similar 
+al border, pero esta fuera del borde, se 
+puede hacer lo suguiente
+p.dotted {outline-style: dotted;
+ border: solid;
+}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+
+
+
+Para darle un widht al outline
+se hace la suguiente forma
+
+outline-width: 50px;
+
+
+
+outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+
+
+
+Esto hace que sea visible a pesar
+del color que tenga el background
+outline-color: invert;
+
+
+
+
+Y esta es la forma corta de hacerlo
+outline: 5px solid yellow;
+
+
+
+outline offset agrega espacio entre el borde
+y la uotline
+
+ margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+
+
+
+
+
+
+
+
+Utilizamos el text-align para alinear
+el texto en la pantalla, se usa el
+text-alig: justify para los container
+en donde hay mucho texto mayormente
+
+
+
+
+
+Esto hace que el texto se vea totalmente
+al reves de como se veria normalmente
+ direction: rtl;
+  unicode-bidi: bidi-override;
+
+
+
+
+
+
+vertical-alig sirve para alinear por ej
+lo que esta a la derecha de yba imagen,
+poniendo el texto abajo, arriba
+o en el meido
+
+img.top {
+  vertical-align: top;
+}
+
+img.middle {
+  vertical-align: middle;
+}
+
+img.bottom {
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+Ademas de usar el text decoration
+para sacarle todas las propiedas
+de un link por ej ,tambien 
+se puede usar para
+un titulo normal, usado de esta
+forma:
+
+h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+A un texto, podemos hacer que 
+tenga todas las letras en mayuscula,
+o que tenga todas minusculas o
+que tenga las primeras letras
+con mayuscula. Esto lo hacemos
+de la suguiente forma con 
+text-transform
+
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+
+
+
+
+
+lo que podemos hacer con el texto
+es agregarle espacio entre las letras,
+de esta forma:
+letter-spacing: 3px;
+
+
+
+Y se puede agregar una sangria de esta forma;
+text-indent: 60px;
+
+
+
+
+El line-height sirve para dar espacio
+entre lineas, osea con el texto que esta debajo 
+seria
+line-height: 1.0;
+
+
+
+
+Esto se usa mas especifico para las letras 
+y dejar un espacio entre ellas
+word-spacing: 10px;  
+La otra forma es mas que nada para caracteres,
+esta sirve para solo letras
+
+
+
+
+Esta se utilizar para dejar un espacio en blanco 
+entre textos
+
+ white-space: nowrap;
+
+
+
+
+Para agregarle una sombra a un texto podemos 
+utilizar text-shadow de esta forma
+
+text-shadow: 2px 2px;
+Cada uno de los pixeles definidos indica
+vertical y horizontalmente donde ubicarse la
+sombra
+
+text-shadow:55px 20px 5px black;
+En el caso de arriba lo que hace la tercer
+definicion de 5px es hacer que se vea o no
+la sombra del texto, y el color es color del
+cual se verá a la sombra
+
+
+
+
+
+Este define el tipo de fuente que tendran
+las letras
+font-style: italic; 
+
+
+Este especifica la propiedas de la fuente
+font-weight: bold;
+
+
+Este especifica si la fuente tendrá o no 
+small-caps
+font-variant: small-caps;
+
+
+
+
+font-size, el font size es el tamaño
+que tendra el texto que nosotros elijamos
+font-size: 40px;
+
+En vez de pixeles podemos usar
+em, por ej 1em equivale a 16px
+fonr-size
+
+
+
+
+
+formas de agregarle cosas o sacarle a un link
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+
+
+De esta formas podemos cambiar el color de fondo
+o con un hover o active o visited o simplemente
+link
+
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+} 
+
+
+
+
+
+Este es un ejemplo de boton con estilos
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+
+
+
+Estos son mas ej de lo que se puede
+hacer cuando se pasa el mouse por arriba pòr ej
+en a.two se agranda la letra a un 150%
+y en el a.four se agrega como un espacion entre
+las letras
+a.two:link {color:#ff0000;}
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}
+
+a.three:link {color:#ff0000;}
+a.three:visited {color:#0000ff;}
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+a.four:visited {color:#0000ff;}
+a.four:hover {font-family:monospace;}
+
+
+
+
+
+Aca veremos como cuando esta sin pasar el mouse
+por arriba vemos que posee un borde verde 
+de 2px solid, y letra negra, pero cuando pasamos
+el mouse por arriba el background cambia a verde
+y el color de las letras a blanco, nuy buen detalle 
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+
+
+Estos son distintos ej de lo que
+puede cambiar el mouse cuando esta por encima
+de algo
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tipos de listas y los estilos que se les
+agrega a cada una
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+
+
+
+Con esto le podemos dar una imagen al cosito
+del principio que indica las listas
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+
+
+
+
+
+
+Esto muestra una pequeña diferencia que es
+que el texto se muestra en uno con la misma 
+sangria y en el otro muestra como no tiene la misma
+sangria
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+
+
+
+En este caso se muestra sin ningun estilo
+y sin marigen ni padding
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+Este seria un estilo de shorthand para hacerlo
+
+ul {
+  list-style: square outside url("sqpurple.gif");
+}
+
+
+
+
+Ahora le damos un poco de color a las listas
+con backgroun y tambien agregando padding y borde
+ol {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+
+
+
+Usamos la etiqueta table en html para crear 
+columnas como en excel por ej
+
+table, th, td {
+  border: 1px solid black;
+  padding:30px;
+}
+
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+
+
+
+
+
+
+En este caso agregamos table a toda la pantalla
+ya que le damos un width del 100%
+table, th, td {
+  border: 1px solid black;
+  padding:20px;
+}
+
+table {
+  width: 100%;
+}
+
+
+
+
+Agregandole esto a table se eliminan los dobles
+bordes, dejando solo un tipo de borde
+border-collapse: collapse;
+
+
+
+Con esta propiedad en table hacemos que solamente
+haya bordes en los costados y que el borde
+sea negro y con 2px
+border: 2px solid black;
+
+
+
+Agregando esto veremos como cambia la seccion de
+titulos seria que es donde deberian de estar las
+etiquetas th
+th {
+  height: 70px;
+}
+
+
+
+
+
+
+
+Asi mostramos que ocupe el 50% de la pantalla
+la table
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
+
+
+
+
+
+Usamos esto para que todo el texto que este dentro
+de las tables se ponga del lado izquierdo dentro 
+de las tables
+th {
+  text-align: left;
+}
+
+
+
+Este vertical align alinea el texto verticalmente
+osea de abajo para arriba pero sobre la misma linea
+vertical-align: center;
+
+
+
+
+
+Aca estamos viendo una tables que tienen todas
+las lineas separadoras ya que estas se marcan
+en la primer invocacion, table,td, th
+luego se le añade padding, se le saca las dobles
+liens que tendria si  no tuviera el collapse
+table, td, th {  
+  border: 1px solid #ddd;
+  
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
+
+
+
+En este caso la tables tendran solamente bordes 
+en su piso de 1px solido de color medio gris
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+Aca se le agrega un hover que hae qye cuando
+se pase el mouse por arriba se vea como se marca
+tr:hover {background-color:#f5f5f5;}
+
+
+
+
+Para darle un estilo de zebra a las tables
+se debe agregar nth-child(even) al css de tr por ej
+
+tr:nth-child(even){
+background-color: black;
+}
+
+
+
+
+Aca vemos como se le agrega un primer color
+al titulo o el que lleva los titulos un color
+negro y despues un estilos zebra con rojo
+y blanco
+tr:nth-child(even){background-color: red}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+Para hacer una lista con muchos titulos que sea
+responsive debemos agregar en el html un div
+que tenga este estilo y en medio debe estar table
+y todo lo demas 
+<div style="overflow-x:auto;">
+
+</div>
+
+
+
+
+
+
+ESTE DISPLAY INLINE AYUDARÁ A MOSTRAR
+LOS LINKS DE LA LISTA EN LA MISMA LINEA
+li {
+  display: inline;
+}
+
+
+
+
+
+Esto muestra como dejar el renglon en el que
+esta y hacer algo parecido a un salto de linea
+span {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+
+
+
+
+
+
+Esto hace que cambie de posicion los links que
+solamente tienen a y no son parte de ninguna lista
+a {
+  display:block; 
+}
+
+<a href="#">Hola</a>
+
+
+
+
+
+Esto hace que no sea visible el titulo h1
+de clase hidden con un valor de visibilidad
+hidden
+h1.hidden {
+  visibility: hidden;
+}
+
+Esto hace casi lo mismo que el de arriba 
+h1.hidden {
+  display: none;
+}
